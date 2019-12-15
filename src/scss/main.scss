@@ -1,12 +1,20 @@
 @import "_normalize";
 @import "_variables";
 @import "menu_navigation";
+@import "_normalize";
+@import "_variables";
+@import "abaut";
+
+
+@import url("https://fonts.googleapis.com/css?family=Lobster|Staatliches&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap&subset=latin-ext");
 
 
 html {
   box-sizing: border-box;
   font: inherit;
   color: inherit;
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
@@ -16,4 +24,5 @@ html {
 body {
   color: $yellow;
   background: $violet;
+  
 }
