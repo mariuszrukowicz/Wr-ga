@@ -319,8 +319,11 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   min-height: 8vh;
-  background-color: #5d4954;
-  font-family: 'Poppins', sans-serif; }
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+  position: fixed;
+  top: 0;
+  width: 100%; }
 
 .logo {
   color: #e2e2e2;
@@ -770,6 +773,118 @@ template {
   .abaut__description {
     text-justify: newspaper; }
 
+#slider {
+  overflow: hidden;
+  max-height: 70rem;
+  margin-bottom: 1.875rem; }
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  -webkit-animation: 20s slider infinite;
+          animation: 20s slider infinite; }
+
+#slider figure img {
+  width: 20%;
+  float: left; }
+
+@-webkit-keyframes slider {
+  0% {
+    left: 0; }
+  20% {
+    left: 0; }
+  25% {
+    left: -100%; }
+  45% {
+    left: -100%; }
+  50% {
+    left: -200%; }
+  70% {
+    left: -200%; }
+  75% {
+    left: -300%; }
+  95% {
+    left: -300%; }
+  100% {
+    left: -400%; } }
+
+@keyframes slider {
+  0% {
+    left: 0; }
+  20% {
+    left: 0; }
+  25% {
+    left: -100%; }
+  45% {
+    left: -100%; }
+  50% {
+    left: -200%; }
+  70% {
+    left: -200%; }
+  75% {
+    left: -300%; }
+  95% {
+    left: -300%; }
+  100% {
+    left: -400%; } }
+
+.menuCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px; }
+  .menuCard--header {
+    color: black;
+    font-size: 2rem; }
+  .menuCard--description {
+    font-size: 1.5rem;
+    padding: 0.626rem 0.626rem 0.626rem 0.626rem;
+    margin: 2rem 2rem 2rem 2rem; }
+  .menuCard--list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem 2rem 2rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
+    list-style-type: none;
+    -webkit-column-gap: 2rem;
+       -moz-column-gap: 2rem;
+            column-gap: 2rem;
+    row-gap: 2rem; }
+  .menuCard--list-header {
+    margin-top: 2,5rem;
+    font-family: "Roboto Condensed", sans-serif, initial, justify;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem; }
+  .menuCard--list-item {
+    font-family: "Roboto Condensed", sans-serif, initial, justify;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 0.062rem;
+    line-height: 1.56rem;
+    padding: 0.626rem 0.626rem 0.626rem 0.626rem;
+    margin-top: 0.626rem; }
+
+.list-item--price {
+  text-align: center;
+  margin-top: 0.3rem;
+  margin-bottom: 1.7rem;
+  font-size: 1.7rem; }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -782,7 +897,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  color: #F9C802;
-  background: #000; }
+  color: black;
+  background: whitesmoke; }
 
 /*# sourceMappingURL=main.css.map */
