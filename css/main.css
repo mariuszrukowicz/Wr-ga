@@ -869,7 +869,8 @@ template {
     font-family: "Roboto Condensed", sans-serif, initial, justify;
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    text-decoration: none; }
   .menuCard--list-item {
     font-family: "Roboto Condensed", sans-serif, initial, justify;
     text-align: center;
