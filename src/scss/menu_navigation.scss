@@ -103,3 +103,15 @@ nav {
   .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
   }
+  .image{
+      height: 100vh;
+      background-image:url("../assets/img/nav_background.jpg" );
+      
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      
+
+
+  }
