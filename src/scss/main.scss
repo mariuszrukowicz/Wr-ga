@@ -4,6 +4,7 @@
 @import "_normalize";
 @import "_variables";
 @import "abaut";
+@import "menu_card";
 
 
 @import url("https://fonts.googleapis.com/css?family=Lobster|Staatliches&display=swap&subset=latin-ext");
@@ -22,7 +23,7 @@ html {
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  color: black;
+  background: whitesmoke;
   
 }
