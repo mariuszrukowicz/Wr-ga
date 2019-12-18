@@ -1,0 +1,25 @@
+.event{
+    display: block;
+    margin: 2.5rem auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-bottom: 2rem;
+   
+   
+    
+    text-align: center;
+    
+    color: black;
+    
+    &--header{
+        padding-top: 2rem;
+        
+        font-size: 2rem;
+        margin-bottom: 2rem;
+       
+    }
+    &--description{
+        line-height: 2.5rem;
+        font-size: 1.5rem;
+    }
+}
