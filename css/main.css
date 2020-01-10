@@ -2945,6 +2945,12 @@ ul {
   letter-spacing: 1px;
   color: #FFB03B; }
 
+.menu-restaurant .menu-line {
+  position: absolute;
+  bottom: 6px;
+  margin-left: .6em;
+  margin-right: .6em; }
+
 .menu-restaurant .menu-price {
   font-weight: 600;
   position: absolute;
