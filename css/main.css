@@ -2911,6 +2911,122 @@ template {
 .one {
   font-size: 1.5rem; }
 
+/* MENU */
+.header-h {
+  font-size: 35px;
+  color: #FFB03B;
+  font-size: 46px;
+  font-family: 'Satisfy', sans-serif;
+  font-weight: 300; }
+
+ul {
+  list-style: none; }
+
+.header-p {
+  color: #9699a6;
+  font-size: 16px; }
+
+.section-padding {
+  padding: 60px 0px; }
+
+.marb-35 {
+  margin-bottom: 35px; }
+
+.menu-restaurant {
+  width: 50%;
+  float: left;
+  padding: 15px;
+  position: realtive; }
+
+.menu-restaurant .menu-title {
+  float: left;
+  font-family: Montserrat,arial;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #FFB03B; }
+
+.menu-restaurant .menu-price {
+  font-weight: 600;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.menu-restaurant .menu-subtitle {
+  display: block;
+  float: left;
+  color: #B1B1B1;
+  font-family: Satisfy,'Open Sans',arial;
+  font-size: 1.2rem; }
+
+.menu-restaurant span.clearfix {
+  position: relative;
+  display: block; }
+
+#menu-filters ul li a.active, #menu-filters ul li a:hover {
+  background: #FFB03B;
+  color: #fff;
+  border: 1px solid #FFB03B; }
+
+#menu-filters ul li {
+  display: inline-block;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-bottom: 40px; }
+
+#menu-filters ul li a {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #565656;
+  border-radius: 0px;
+  border: 1px solid #BBBBBB;
+  text-decoration: none;
+  cursor: pointer; }
+
+@media (min-width: 20px) and (max-width: 450px) {
+  .menu-restaurant {
+    width: 100%; }
+  .header-h {
+    font-size: 35px; }
+  .header-p {
+    font-size: 14px; } }
+
+.msg-row {
+  margin-top: 56px; }
+
+.media-body, .media-left, .media-right {
+  display: table-cell;
+  vertical-align: top; }
+
+.bg-1 {
+  background-color: #fecc17;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%; }
+
+.bg-14 {
+  background-color: #ccdb38;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%; }
+
+.dark-blue {
+  color: #31364c;
+  font-size: 24px;
+  margin-top: 0; }
+
+.light-blue {
+  color: #9699a6;
+  font-size: 16px;
+  margin-bottom: 1px; }
+
+.media-body {
+  margin-left: 10px;
+  padding-left: 13px; }
+
+.media-2 {
+  margin-top: 30px; }
+
 .event {
   display: block;
   margin: 2.5rem auto;
