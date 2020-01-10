@@ -1,260 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta
-      property="og:image"
-      content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Site title</title>
+  <meta name="description" content="Description" />
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <!-- Title -->
+  <meta property="og:title" content="" />
+  <!-- OPTIONAL description. 2-4 sentences. -->
+  <meta property="og:description" content="" />
+  <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+  <meta property="og:url" content="" />
+  <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+  <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <nav class="nav">
-      <div class="logo">
-        <h4 class="logo"><img src="../assets/img/logo.png" alt="Tekst alternatywny" height="80px" width="200px"> </h4>
-        
-      </div>
-      <ul class="nav-links">
-        <li>
-          <a href="javascript:scroll(0,0);">Home</a>
-        </li>
-        <li>
-          <a href="#abaut">O nas</a>
-        </li>
-        <li>
-          <a href="#menu">Menu</a>
-        </li>
-        <li>
-          <a href="#event">Imprezy</a>
-        </li>
-        <li>
-          <a href="#contact">Kontakt</a>
-        </li>
-      </ul>
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-    </nav>
-    <section class="image">
-      </section>
-      <section class="abaut" id="abaut">
-        <h2 class="abaut__header">O nas</h2>
-        <p class="abaut__description">
-          Restauracja - Pub Wręga ul. józefa 17
-        </p>
-        <p class="abaut__description">
-          Restauracja wręga znajduje się w dzielnicy Krakowa Kazimierz przy ulicy
-          Józefa 17.<br> Oficjalnie otwarcie Wręgi nastąpiło podczas Święta Ulicy Józefa 
-          w czerwcu 2006r. jako punkt gastronomiczny krzewiący kulturę.<br> Wręga organizuje koncerty piosenki 
-          poetyckiej, poezji śpiewanej, turystycznej i szantowej oraz wernisażę i wystawy.<br>
-          Restauracja posiada 3 poziomy sal(również dla palących) i bardzo duży zielony 
-          ogródek.<br> Do najpopularniejszych dan naszej kuchni goście zaliczają: bigos, pierogi, żurek, golonkę oraz inne typowo polskie dania.<br>
-          Serwujemy również różne napoje alkoholowe i bezalkoholowe.
-        </p>
-      </section>
-      
-      <section class="slider">
-        <div id="slider">
-          <figure>
-            <img src="assets/img/1.jpg" />
-            <img src="assets/img/3.jpg" />
-            <img src="assets/img/1.jpg" />
-            <img src="assets/img/3.jpg" />
-            <img src="assets/img/1.jpg" />
-          </figure>
+  <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"><!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="assets/css/navik.menu.css"> <!-- Navik navigation CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> <!-- Google fonts -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+</head>
+
+<body>
+  <div class="navik-header header-shadow">
+		<div class="container">
+
+			<!-- Navik header -->
+			<div class="navik-header-container">
+				
+				<!--Logo-->
+        <div class="logo" data-mobile-logo="../assets/img/logo150x150.png" data-sticky-logo="../assets/img/logo150x150.png">
+                	<a href="#"><img src="../assets/img/logo150x150.png" alt="logo"/></a>
+				</div>
+				
+				<!-- Burger menu -->
+				<div class="burger-menu">
+					<div class="line-menu line-half first-line"></div>
+					<div class="line-menu"></div>
+					<div class="line-menu line-half last-line"></div>
+				</div>
+
+				<!--Navigation menu-->
+                <nav class="navik-menu menu-caret submenu-top-border submenu-scale">
+                	<ul class="list-unstyled" >
+                    	<li class="current-menu"><a href="#"> <i class="fas fa-home"></i> Home</a>
+                        	
+                      </li>
+                      <li><a href="#abaut">O nas</a></li>
+                      <li><a href="#menu">Menu</a></li>
+                      <li><a href="#event">Imprezy</a></li>
+                      <li><a href="#gallery">Galeria</a></li>
+                      <li><a href="#contact">Kontakt</a></li>
+                      
+                  </ul>
+                </nav>
+
+			</div>
+
+		</div>
+	</div>
+
+  <section class="image">
+  </section>
+  <section class="abaut" id="abaut">
+    <h2 class="abaut__header">O nas</h2>
+    <p class="abaut__description">
+      Restauracja - Pub Wręga ul. józefa 17
+    </p>
+    <p class="abaut__description">
+      Restauracja wręga znajduje się w dzielnicy Krakowa Kazimierz przy ulicy
+      Józefa 17.<br> Oficjalnie otwarcie Wręgi nastąpiło podczas Święta Ulicy Józefa
+      w czerwcu 2006r. jako punkt gastronomiczny krzewiący kulturę.<br> Wręga organizuje koncerty piosenki
+      poetyckiej, poezji śpiewanej, turystycznej i szantowej oraz wernisażę i wystawy.<br>
+      Restauracja posiada 3 poziomy sal(również dla palących) i bardzo duży zielony
+      ogródek.<br> Do najpopularniejszych dan naszej kuchni goście zaliczają: bigos, pierogi, żurek, golonkę oraz inne
+      typowo polskie dania.<br>
+      Serwujemy również różne napoje alkoholowe i bezalkoholowe.
+    </p>
+  </section>
+
+  <section class="slider">
+    <div id="slider">
+      <figure>
+        <img src="assets/img/1.jpg" />
+        <img src="assets/img/3.jpg" />
+        <img src="assets/img/1.jpg" />
+        <img src="assets/img/3.jpg" />
+        <img src="assets/img/1.jpg" />
+      </figure>
+    </div>
+  </section>
+  <section class="menuCard" id="menu">
+    <h2 class="menuCard--header">MENU</h2>
+    <p class="menuCard--description">
+      w menu Restaurant nie znajdziecie Państwo dań opartych na
+      przypadkowych składnikach.<br />
+      Znamy osobiśćie naszych dostawców.
+    </p>
+    <ol class="menuCard--list">
+      <li class="menuCard--list-header">
+        Przystawki<br>
+        (Starters)
+        <ul class="menuCard--list-item">
+          Chipsy 80g<br>(Crips)
+        </ul>
+        <p class="list-item--price">7,00zł</p>
+        <ul class="menuCard--list-item">
+          Słone paluszki 70g <br>(salted sticks)
+        </ul>
+        <p class="list-item--price">7,00zł</p>
+        <ul class="menuCard--list-item">
+          Orzeszki 100g<br> ( peanuts)
+        </ul>
+        <p class="list-item--price">7zł</p>
+        <ul class="menuCard--list-item">
+          Frytki<br> (french fries)<br>200g/300g
+        </ul>
+        <p class="list-item--price">9,00/11,00zł</p>
+        <ul class="menuCard--list-item">
+          Smalec domowy z ogórkiem kiszonym i pieczywem<br> (na 2-3 osoby)<br>
+          (homemade lard, pickles and bread- for 2-3 people)
+        </ul>
+        <p class="list-item--price">15,00zł</p>
+        <ul class="menuCard--list-item">
+          Kiełbasa pieczona z ogórkiem kiszonym i pieczywem<br>
+          (roasted sausage, pickles and bread )
+        </ul>
+        <p class="list-item--price">19,00zł</p>
+        <ul class="menuCard--list-item">
+          <a class="one">Zestaw piwosza</a><br> krążki cebulowe, paluszki serowe, ziemniaczki zapiekane oraz nuggetsy z
+          kurczaka ( na 2-3 osoby)<br>
+          (Snacks for beer: onion rings roast cheese, potato, chicken nuggets - for 203 people)
+        </ul>
+        <p class="list-item--price">32,00zł</p>
+        <ul class="menuCard--list-item">
+          Sałatka śledziowa z pieczywem<br>
+          Śledzie marynowane, burak ziemniaki cebula jajko<br>
+          (herring Salad: marinated herring, beetroot, potato, onion, egg)
+
+        </ul>
+        <p class="list-item--price">15,00zł</p>
+      </li>
+      <li class="menuCard--list-header">
+        Poranne smakołyki<br>
+        (Breakfast menu)
+        <ul class="menuCard--list-item">
+          Jajecznica z trzech jaj z pieczywem<br>
+          (Scrambled eggs with bread):
+          <br><br>
+          -Na maśle (with butter)
+          <p class="list-item--price">10,00zł</p>
+          -Z szynką (with ham)
+          <p class="list-item--price">12,00zł</p>
+        </ul>
+
+
+      </li>
+      <li class="menuCard--list-header">
+        Zupy <br>
+        (Soups)
+        <ul class="menuCard--list-item">
+          Tradycyjny żurek po staropolsku podawany w chlebie lub misce<br>
+          (Żurek-tradicional polish soup with sausage and egg, served in bread or a plate)
+        </ul>
+        <p class="list-item--price">10,00zł</p>
+        <ul class="menuCard--list-item">
+          Zupa pomidowowa z makaronem <br>
+          (Tomato soup with noodles)
+        </ul>
+        <p class="list-item--price">10,00zł</p>
+        <ul class="menuCard--list-item">
+          Zupa krem z warzyw z grzankami <br>
+          (Cream soup of vegetables with crutons)
+        </ul>
+        <p class="list-item--price">14,00 Zł</p>
+        </ul>
+
+      </li>
+      <li class="menuCard--list-header">
+        Sałatki<br>
+        (Salads)
+        <ul class="menuCard--list-item">
+          Grecka<br>
+          Mix sałat, pomidor cebula, ogórek, ser feta, oliwki<br>
+          (Mix lettuce, tomato, onion, cucumber, feta cheese, olives)
+
+        </ul>
+        <p class="list-item--price">25,00</p>
+        <ul class="menuCard--list-item">
+          Wręga<br>
+          Mix sałat, pomidor cebula, ogórek kiszony, burak, jajko, szynka, czerwona cebula, chipsy z boczku<br>
+          (Mix lettuce, tomato, onion, pickled cucumber, beetroot, egg, ham, red onion, bacon chips)<br><br>
+          Sos do wyboru w cenie sałatek:( salad dressing included)<br>
+          Czosnkowy(garlic) Winegret(vinaigrett)
+          <p class="list-item--price">26,00</p>
+        </ul>
+
+      </li>
+      <li class="menuCard--list-header">
+        Naleśniki + Pierogi + Makaron<br>
+        (Pancakes + Dumplings + Pasta )
+        <ul class="menuCard--list-item">
+          Naleśniki z jabłkiem i czekoladą<br>
+          (Pancakes with apple and chocolate with cranberry-raspberry sauce)
+        </ul>
+        <p class="list-item--price">16</p>
+        <ul class="menuCard--list-item">
+          Pierogi smażone-9szt. (fried dumplings)<br>
+          -Ruskie ze skwarkami (with onion, potatoes, cottage chese, crackling)<br>
+          -Z mięsem( with meat)<br>
+          -Z kapustą i grzybami( with cabbage and mushrooms)
+
+        </ul>
+        <p class="list-item--price">17,00</p>
+        <ul class="menuCard--list-item">
+          Pierogi gotowane-9szt.(boiled dumplings<br>
+          )
+        </ul>
+        <p class="list-item--price">30</p>
+        <ul class="menuCard--list-item">
+          Tarta Tatin (120 g)
+        </ul>
+        <p class="list-item--price">30</p>
+      </li>
+    </ol>
+  </section>
+  <section class="event" id="event">
+    <h2 class="event--header">Imprezy</h1>
+      <p class="event--description">
+        Organizujemy: śniadania, kolacje,<br> imprezy firmowe i konferencje, a także
+        wydarzenia rodzinne.<br> Obsługujemy również grupy turystyczne.<br> Aby
+        dowiedzieć się więcej, prosimy o kontakt: +777777666.
+      </p>
+  </section>
+<section class="gallery" id="gallery">
+  <div class="container gallery-container">
+
+    <h1>odkryj Pub Wręge sam!</h1>
+
+    <p class="page-description text-center">Doskonała kuchnia to nie wszystko,
+      odkryj Pub Wręge sam!</p>
+    
+    <div class="tz-gallery">
+
+        <div class="row">
+
+            
+            
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="../assets/galery/galery3.jpg">
+                    <img src="../assets/galery/galery3.jpg" alt="Tunnel">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <a class="lightbox" href="../assets/galery/galery3.jpg">
+                  <img src="../assets/galery/galery3.jpg" alt="Tunnel">
+              </a>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <a class="lightbox" href="../assets/galery/galery3.jpg">
+                <img src="../assets/galery/galery3.jpg" alt="Tunnel">
+            </a>
         </div>
-      </section>
-      <section class="menuCard" id="menu">
-        <h2 class="menuCard--header">MENU</h2>
-        <p class="menuCard--description">
-          w menu Restaurant nie znajdziecie Państwo dań opartych na
-          przypadkowych składnikach.<br />
-          Znamy osobiśćie naszych dostawców.
-        </p>
-        <ol class="menuCard--list">
-          <li class="menuCard--list-header">
-            Przystawki<br>
-            (Starters)
-            <ul class="menuCard--list-item">
-              Chipsy 80g<br>(Crips)
-            </ul>
-            <p class="list-item--price">7,00zł</p>
-            <ul class="menuCard--list-item">
-              Słone paluszki 70g <br>(salted sticks)
-            </ul>
-            <p class="list-item--price">7,00zł</p>
-            <ul class="menuCard--list-item">
-              Orzeszki 100g<br> ( peanuts)
-            </ul>
-            <p class="list-item--price">7zł</p>
-            <ul class="menuCard--list-item">
-              Frytki<br> (french fries)<br>200g/300g
-            </ul>
-            <p class="list-item--price">9,00/11,00zł</p>
-            <ul class="menuCard--list-item">
-             Smalec domowy z ogórkiem kiszonym i pieczywem<br> (na 2-3 osoby)<br>
-             (homemade lard, pickles and bread- for 2-3 people)
-            </ul>
-            <p class="list-item--price">15,00zł</p>
-            <ul class="menuCard--list-item">
-              Kiełbasa pieczona z ogórkiem kiszonym i pieczywem<br>
-              (roasted sausage, pickles and bread )
-             </ul>
-             <p class="list-item--price">19,00zł</p>
-             <ul class="menuCard--list-item">
-              <a class="one">Zestaw piwosza</a><br> krążki cebulowe, paluszki serowe, ziemniaczki zapiekane oraz nuggetsy z kurczaka ( na 2-3 osoby)<br>
-              (Snacks for beer: onion rings roast cheese, potato, chicken nuggets - for 203 people) 
-             </ul>
-             <p class="list-item--price">32,00zł</p>
-             <ul class="menuCard--list-item">
-              Sałatka śledziowa z pieczywem<br>
-              Śledzie marynowane, burak ziemniaki cebula jajko<br>
-              (herring Salad: marinated herring, beetroot, potato, onion, egg)
+            
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="../assets/galery/galery5.jpg">
+                    <img src="../assets/galery/galery5.jpg" alt="Coast">
+                </a>
+            </div> 
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="../assets/galery/galery6.jpg">
+                    <img src="../assets/galery/galery6.jpg" alt="Rails">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <a class="lightbox" href="../assets/galery/galery1.jpg">
+                  <img src="../assets/galery/galery1.jpg" alt="Rails">
+              </a>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <a class="lightbox" href="../assets/galery/galery6.jpg">
+                <img src="../assets/galery/galery6.jpg" alt="Rails">
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <a class="lightbox" href="../assets/galery/galery5.jpg">
+              <img src="../assets/galery/galery5.jpg" alt="Rails">
+          </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a class="lightbox" href="../assets/galery/galery6.jpg">
+            <img src="../assets/galery/galery6.jpg" alt="Rails">
+        </a>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <a class="lightbox" href="../assets/galery/galery7.jpg">
+          <img src="../assets/galery/galery7.jpg" alt="Rails">
+      </a>
+  </div>
 
-             </ul>
-             <p class="list-item--price">15,00zł</p>
-          </li>
-          <li class="menuCard--list-header">
-            Poranne smakołyki<br>
-            (Breakfast menu)
-            <ul class="menuCard--list-item">
-             Jajecznica z trzech jaj z pieczywem<br>
-             (Scrambled eggs with bread):
-             <br><br>
-             -Na maśle (with butter)
-             <p class="list-item--price">10,00zł</p>
-             -Z szynką (with ham)
-             <p class="list-item--price">12,00zł</p></ul>
+        </div>
 
-            
-          </li>
-          <li class="menuCard--list-header">
-            Zupy <br>
-            (Soups)
-            <ul class="menuCard--list-item">
-              Tradycyjny żurek po staropolsku podawany w chlebie lub misce<br>
-              (Żurek-tradicional polish soup with sausage and egg, served in bread or a plate)
-            </ul>
-            <p class="list-item--price">10,00zł</p>
-            <ul class="menuCard--list-item">
-              Zupa pomidowowa z makaronem <br>
-              (Tomato soup with noodles)
-            </ul>
-            <p class="list-item--price">10,00zł</p>
-            <ul class="menuCard--list-item">
-              Zupa krem z warzyw z grzankami <br>
-              (Cream soup of vegetables with crutons)
-            </ul>
-            <p class="list-item--price">14,00 Zł</p>
-          </ul>
-            
-          </li>
-          <li class="menuCard--list-header">
-            Sałatki<br>
-            (Salads)
-            <ul class="menuCard--list-item">
-              Grecka<br>
-              Mix sałat, pomidor cebula, ogórek, ser feta, oliwki<br>
-              (Mix lettuce, tomato, onion, cucumber, feta cheese, olives)
-              
-            </ul>
-            <p class="list-item--price">25,00</p>
-            <ul class="menuCard--list-item">
-              Wręga<br>
-              Mix sałat, pomidor cebula, ogórek kiszony, burak, jajko, szynka, czerwona cebula, chipsy z boczku<br>
-              (Mix lettuce, tomato, onion, pickled cucumber, beetroot, egg, ham, red onion, bacon chips)<br><br>
-              Sos do wyboru w cenie sałatek:( salad dressing included)<br>
-              Czosnkowy(garlic) Winegret(vinaigrett)
-              <p class="list-item--price">26,00</p>
-            </ul>
-            
-          </li>
-          <li class="menuCard--list-header">
-            Naleśniki + Pierogi + Makaron<br>
-            (Pancakes + Dumplings + Pasta )
-            <ul class="menuCard--list-item">
-              Naleśniki z jabłkiem i czekoladą<br>
-              (Pancakes with apple and chocolate with cranberry-raspberry sauce)
-            </ul>
-            <p class="list-item--price">16</p>
-            <ul class="menuCard--list-item">
-              Pierogi smażone-9szt. (fried dumplings)<br>
-              -Ruskie ze skwarkami (with onion, potatoes, cottage chese, crackling)<br>
-              -Z mięsem( with meat)<br>
-              -Z kapustą i grzybami( with cabbage and mushrooms)
-              
-            </ul>
-            <p class="list-item--price">17,00</p>
-            <ul class="menuCard--list-item">
-           Pierogi gotowane-9szt.(boiled dumplings<br>
-           )
-            </ul>
-            <p class="list-item--price">30</p>
-            <ul class="menuCard--list-item">
-              Tarta Tatin (120 g)
-            </ul>
-            <p class="list-item--price">30</p>
-          </li>
-        </ol>
-      </section>
-      <section class="event" id="event">
-        <h2 class="event--header">Imprezy</h1>
-          <p class="event--description">
-            Organizujemy: śniadania, kolacje,<br> imprezy firmowe i konferencje, a także
-            wydarzenia rodzinne.<br> Obsługujemy również grupy turystyczne.<br> Aby
-            dowiedzieć się więcej, prosimy o kontakt: +777777666.
+    </div>
+
+</div>
+
+</section>
+  
+  <section class="contact" id="contact">
+    <h2 class="contact--header">Kontakt</h1>
+      <ol class="contact--list">
+        <li class="contact--list-header">Adres <p class="contact--list-description">ul. Józefa 17
+            31-055 Kraków
           </p>
-      </section>
-      <section class="contact" id="contact">
-        <h2 class="contact--header">Kontakt</h1>
-          <ol class="contact--list">
-            <li class="contact--list-header">Adres <p class="contact--list-description">ul. Józefa 17
-              31-055 Kraków
-              </p>
-            </li>
-  
-            <li class="contact--list-header">Rezerwacje <p class="contact--list-description">restauracja 660 888 333</p>
-            </li>
-  
-            <li class="contact--list-header">Rezerwacje dla grup(>20 os) <p class="contact--list-description">Tomasz <br>
-                445 666 554</p>
-            </li>
-  
-            <li class="contact--list-header">Godziny otwarcia <p class="contact--list-description">poniedziałek-niedziela 11:00-24:00</p>
-            </li>
-           
-          </ol>
-          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.8874861366457!2d19.944014815652995!3d50.05093897942223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b41df5a750d%3A0x2fa99b5b79b851d3!2sPub%20Wr%C4%99ga!5e0!3m2!1spl!2spl!4v1576677398464!5m2!1spl!2spl" width="1700" height="500" frameborder="0" style="border:10;" allowfullscreen=""></iframe>
+        </li>
 
-    <script src="js/main.js"></script>
-  </body>
+        <li class="contact--list-header">Rezerwacje <p class="contact--list-description">restauracja 660 888 333</p>
+        </li>
+
+        <li class="contact--list-header">Rezerwacje dla grup(>20 os) <p class="contact--list-description">Tomasz <br>
+            445 666 554</p>
+        </li>
+
+        <li class="contact--list-header">Godziny otwarcia <p class="contact--list-description">poniedziałek-niedziela
+            11:00-24:00</p>
+        </li>
+
+      </ol>
+      
+      <iframe class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.8874861366457!2d19.944014815652995!3d50.05093897942223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b41df5a750d%3A0x2fa99b5b79b851d3!2sPub%20Wr%C4%99ga!5e0!3m2!1spl!2spl!4v1576677398464!5m2!1spl!2spl"
+        width="100%" height="500" frameborder="0" style="border:10;" allowfullscreen="none"></iframe>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
+
+        <script src="assets/js/navik.menu.js"></script> <!-- Navik navigation jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+      
+</script>
+</body>
+
 </html>
