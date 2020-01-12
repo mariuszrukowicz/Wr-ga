@@ -1,28 +1,61 @@
 .abaut {
     display: block;
-    margin: 0 auto;
+    margin:  auto;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     padding-bottom: 2rem;
     
     font-size: 1.5rem;
     
-    text-align: center;
+    text-align: left;
 
 
-    background: whitesmoke;
+    background: #ffffff;
     color: black;
 
     line-height: 2.5rem;
 
     &__header {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-top: 7rem;
+        padding-bottom: 7rem;
         text-align: center;
+        font-family:Montserrat,arial;
+
+      text-transform:uppercase;
+
+        
 
     }
-&__description{
-  text-justify: newspaper;  
-  
+    
+
 }
+.abaut_image{
+  background-image:url("../assets/galery/555.jpg" ) ;
+  background-repeat: no-repeat;
+ margin-left: 2rem;
+   
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 0.7fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: ". . .";
+  padding:2rem 1rem 2rem 1rem;
+  grid-row-end: auto;
+  @media (max-width: 768px) {
+    grid-template-columns:  1fr;
+  grid-template-rows: 1fr;
+
+   
+}}
+.abaut__description{
+  padding-right: auto;
+  padding-left: auto;
+  font-family:arial;
+
+
+  @media (max-width: 768px) {
+    padding-right: 1rem;
+  padding-left: 1rem;
+}}

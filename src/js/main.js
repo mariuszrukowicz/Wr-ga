@@ -368,4 +368,76 @@ jQuery(document).ready(function() {
 	})(jQuery);
   
    
-  
+  // post
+
+  {
+    const form = document.querySelector('#contactForm');
+    const inputs = form.querySelectorAll('input[required], textarea[required], select[required]');
+
+    //wyłączamy domyślną walidację
+    form.setAttribute('novalidate', true);
+
+    const displayFieldError = function(elem) {
+        const fieldRow = elem.closest('.form-row');
+        const fieldError = fieldRow.querySelector('.field-error');
+        if (fieldError === null) {
+            const errorText = elem.dataset.error;
+            const divError = document.createElement('div');
+            divError.classList.add('field-error');
+            divError.innerText = errorText;
+            fieldRow.appendChild(divError);
+        }
+    };
+
+    const hideFieldError = function(elem) {
+        const fieldRow = elem.closest('.form-row');
+        const fieldError = fieldRow.querySelector('.field-error');
+        if (fieldError !== null) {
+            fieldError.remove();
+        }
+    };
+
+    [...inputs].forEach(elem => {
+        elem.addEventListener('input', function() {
+            if (!this.checkValidity()) {
+                this.classList.add('error');
+            } else {
+                this.classList.remove('error');
+                hideFieldError(this);
+            }
+        });
+
+        if (elem.type === "checkbox") {
+            elem.addEventListener('click', function() {
+                const formRow = this.closest('.form-row');
+                if (this.checked) {
+                    this.classList.remove('error');
+                    hideFieldError(this);
+                } else {
+                    this.classList.add('error');
+                }
+            });
+        }
+    });
+
+    const checkFieldsErrors = function(elements) {
+        //ustawiamy zmienną na true. Następnie robimy pętlę po wszystkich polach
+        //jeżeli któreś z pól jest błędne, przełączamy zmienną na false.
+        let fieldsAreValid = true;
+
+        [...elements].forEach(elem => {
+            if (elem.checkValidity()) {
+                hideFieldError(elem);
+                elem.classList.remove('error');
+            } else {
+                displayFieldError(elem);
+                elem.classList.add('error');
+                fieldsAreValid = false;
+            }
+        });
+
+        return fieldsAreValid;
+    };
+
+    
+}
