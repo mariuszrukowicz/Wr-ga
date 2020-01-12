@@ -4,10 +4,11 @@
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     padding-bottom: 2rem;
-    
-    font-size: 1.5rem;
-    
+    min-height: 40vh;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
     text-align: left;
+    
 
 
     background: #ffffff;
@@ -26,6 +27,18 @@
         
 
     }
+    &_head {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      text-align: center;
+      font-family:Montserrat,arial;
+     
+
+    text-transform:uppercase;
+
+      
+
+  }
     
 
 }
@@ -38,11 +51,12 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: 0.1fr 1fr 0.7fr;
+  grid-template-columns: 0.5fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: ". . .";
   padding:2rem 1rem 2rem 1rem;
   grid-row-end: auto;
+  margin-bottom: 6rem;
   @media (max-width: 768px) {
     grid-template-columns:  1fr;
   grid-template-rows: 1fr;
@@ -51,11 +65,12 @@
 }}
 .abaut__description{
   padding-right: auto;
-  padding-left: auto;
-  font-family:arial;
-
-
-  @media (max-width: 768px) {
-    padding-right: 1rem;
   padding-left: 1rem;
-}}
+  font-family:arial;
+  border-left: 4px solid gold;
+ 
+  
+}
+
+
+  
