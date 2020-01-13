@@ -3099,11 +3099,9 @@ ul {
 .contact {
   background-color: #01594d;
   color: white;
-  margin: 1.25rem auto;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
+  padding-top: 2rem; }
   .contact--header {
     display: block;
     text-align: center;
@@ -3352,6 +3350,56 @@ ul {
   .form .send-error {
     text-align: center;
     display: block; } }
+
+.footer {
+  background: black;
+  color: #fff;
+  padding-bottom: calc(8rem - 16px); }
+  .footer__description {
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    max-width: 580px;
+    margin: 0 0 1.5rem; }
+  .footer__mail {
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-decoration: none;
+    padding-bottom: 8px;
+    border-bottom: 2px solid whitesmoke;
+    display: inline-block;
+    margin: 3rem 0 0 0; }
+  .footer__title {
+    font-size: 2rem;
+    margin: 0 auto 1rem;
+    font-style: normal;
+    font-weight: 600;
+    padding: 8rem 16px 0;
+    max-width: 1216px; }
+    .footer__title::before {
+      content: '';
+      width: 100px;
+      height: 4px;
+      display: block;
+      background: whitesmoke;
+      border-radius: 8px;
+      margin-bottom: 1.5rem; }
+
+.social {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .social__item + .social__item {
+    margin-left: 1.5rem; }
+  .social__link {
+    text-decoration: none; }
+  .social__icon {
+    height: 4.5rem;
+    width: 4.5rem; }
 
 .container.gallery-container {
   background-color: #fff;
