@@ -1,6 +1,6 @@
 .contact{
     
-    background-color: $darkgreen;
+    background-color: rgb(4, 27, 90);
     color: white;
    
     padding-left: 1.25rem;
@@ -110,9 +110,9 @@
     padding-left:3rem;
     position: relative;
     font-weight: normal;
-    font-size:0.85rem;
+    font-size:1rem;
     line-height: 1.1rem;
-    color:#444;
+    color:rgb(255, 255, 255);
     cursor: pointer;
 }
 .form .checkbox-cnt .state {
@@ -301,3 +301,5 @@
         
     }
 }
+
+
