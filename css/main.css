@@ -463,7 +463,6 @@ template {
 
 .navik-menu ul li.current-menu > a,
 .navik-menu ul li:hover > a {
-  color: #10bd00;
   background-color: #f6f6f6; }
 
 .navik-menu ul ul li > a {
@@ -3097,7 +3096,7 @@ ul {
     font-size: 1.5rem; }
 
 .contact {
-  background-color: #01594d;
+  background-color: #041b5a;
   color: white;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -3195,9 +3194,9 @@ ul {
   padding-left: 3rem;
   position: relative;
   font-weight: normal;
-  font-size: 0.85rem;
+  font-size: 1rem;
   line-height: 1.1rem;
-  color: #444;
+  color: white;
   cursor: pointer; }
 
 .form .checkbox-cnt .state {

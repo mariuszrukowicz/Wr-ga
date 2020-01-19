@@ -103,7 +103,7 @@
   
 
   </div>
-  
+  <!-- Slider -->
   <section class="slider">
     <div id="slider">
       <figure>
@@ -471,6 +471,35 @@
         </li>
 
       </ol>
+      <section>
+        <form class="form" id="contactForm" method="post" novalidate action="send-script.php">
+          <div class="form-row">
+              <label for="field-name">Name*</label>
+              <input value="imię" type="text" name="name" required id="field-name" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+          </div>
+          <div class="form-row">
+              <label for="field-email">Email*</label>
+              <input value="email@wp.pl" type="email" name="email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+          </div>
+          <div class="form-row">
+              <label for="field-message">Message*</label>
+              <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+">Wiadomość</textarea>
+          </div>
+          <div class="form-row">
+              <label class="checkbox-cnt">
+                  <input type="checkbox" required data-error="Musisz wypełnić pole" name="regulation">
+                  <i class="state" aria-hidden="true"></i>
+                  <span>Nie jestem robotem</span>
+              </label>
+          </div>
+          <div class="form-row">
+              <button type="submit" class="submit-btn">
+                  Wyślij
+              </button>
+          </div>
+          
+      </form>
+      </section>
       
       
       <iframe class="map"
@@ -478,6 +507,9 @@
         width="100%" height="500" frameborder="0" style="border:10;" allowfullscreen="none"></iframe>
       </section>
 
+
+      <!-- Download file
+<a href="assets/img/pdf.pdf">snjksdfj</a>-->
       <footer class="footer" >
         <h2 class="footer__title">Wszelkie prawa zastrzeżone (c) Pub Wręga</h2>
         <div class="container">
