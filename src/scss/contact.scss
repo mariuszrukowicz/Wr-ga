@@ -42,7 +42,10 @@
 .map{
     position: relative ;
     overflow: hidden;
-    
+    width: 100%;
+    height:min(400px);
+    border-radius: 8px;
+    border:4px solid ;
     
 }
 

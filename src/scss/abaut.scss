@@ -1,21 +1,16 @@
 .abaut {
-    display: block;
-    margin:  auto;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    padding-bottom: 2rem;
-    min-height: 40vh;
-    font-size: 1.7rem;
-    letter-spacing: 1px;
-    text-align: left;
-    
-
-
-    background: #ffffff;
-    color: black;
-
-    line-height: 2.5rem;
-
+  display : block;
+  margin : auto;
+  padding-left : 1.25rem;
+  padding-right : 1.25rem;
+  padding-bottom : 2rem;
+  min-height : 40vh;
+  font-size : 1.7rem;
+  letter-spacing : 1px;
+  text-align : left;
+  background : #ffffff;
+  color : black;
+  line-height : 2.5rem;
     &__header {
         padding-top: 7rem;
         padding-bottom: 7rem;
@@ -46,6 +41,7 @@
   background-image:url("../assets/galery/555.jpg" ) ;
   background-repeat: no-repeat;
  margin-left: 2rem;
+ 
    
 }
 
